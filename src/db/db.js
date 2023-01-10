@@ -1,7 +1,9 @@
 const fs = require('fs')
 
+const DB = require('./db.json')
+
 const getAll = ()=>{
-    return null
+    return [...DB]
 }
 
 const addUsers = (data)=>{
